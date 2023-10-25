@@ -1,16 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import {Routes,Route} from "react-router-dom"
+import {withRouter} from "react-router-dom"
+import Main from "./Components/Main/Main"
 
 function App() {
   return (
-<div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
-      <p className="text-3xl text-gray-700 font-bold mb-5">
-        Welcome!
-      </p>
-      <p className="text-gray-500 text-lg">
-        React and Tailwind CSS in action
-      </p>
-    </div>
+<Routes>
+  <Route exact path="/" component ={Main} />
+</Routes>
+
   );
 }
 
