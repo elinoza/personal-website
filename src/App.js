@@ -1,13 +1,15 @@
 import logo from './logo.svg';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {Routes,Route} from "react-router-dom"
-import {withRouter} from "react-router-dom"
+
 import Main from "./Components/Main/Main"
 
 function App() {
   return (
 <Routes>
-  <Route exact path="/" component ={Main} />
+  <Route exact path="/" element={<Main/>} />
 </Routes>
 
   );
