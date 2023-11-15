@@ -2,15 +2,19 @@ import React, { Component } from "react";
 import "./Main.css";
 import "./Main.scss";
 import { Col, Row, Container, Button, Badge } from "react-bootstrap";
+import Projects from  "./Projects"
 
 import NavBar from "./NavBar";
 
 class Main extends Component {
   state = {
-    detail_active: false,
+   
+
   };
 
+
   render() {
+    let detail_list=[1,2,3,4]
     return (
       <>
         <Container>
@@ -53,122 +57,9 @@ class Main extends Component {
           </Row>
           <h1>My Projects</h1>
           <Row>
-            <Col className="project" xs={12} md={6}>
-              <img
-                src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1239&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="project_1"
-              />
-              <div className="overlay"></div>
-              <div
-                className="plus"
-                onClick={() => this.setState({ detail_active: true })}
-              ></div>
-              <div
-                className={
-                  this.state.detail_active ? "detail active" : "detail"
-                }
-              >
-                <div className="close" onclick={()=>this.setState({detail_active:false})}></div>
-
-                <div className="website"></div>
-                <div className="infos">
-                  <img
-                    className="header"
-                    src="https://images.unsplash.com/photo-1518051870910-a46e30d9db16?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="header-img"
-                  />
-                  <div className="information"></div>
-                  <div className="project-Name">The Weather App</div>
-                </div>
-              </div>
-            </Col>
-            <Col className="project" xs={12} md={6}>
-              <img
-                src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1239&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="project_1"
-              />
-              <div className="overlay"></div>
-              <div
-                className="plus"
-                onClick={() => this.setState({ detail_active: true })}
-              ></div>
-              <div
-                className={
-                  this.state.detail_active ? "detail active" : "detail"
-                }
-              >
-                <div className="close"></div>
-
-                <div className="website"></div>
-                <div className="infos">
-                  <img
-                    className="header"
-                    src="https://images.unsplash.com/photo-1518051870910-a46e30d9db16?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="header-img"
-                  />
-                  <div className="information"></div>
-                  <div className="project-Name">The Weather App</div>
-                </div>
-              </div>
-            </Col>
-            <Col className="project" xs={12} md={6}>
-              <img
-                src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1239&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="project_1"
-              />
-              <div className="overlay"></div>
-              <div
-                className="plus"
-                onClick={() => this.setState({ detail_active: true })}
-              ></div>
-              <div
-                className={
-                  this.state.detail_active ? "detail active" : "detail"
-                }
-              >
-                <div className="close"></div>
-
-                <div className="website"></div>
-                <div className="infos">
-                  <img
-                    className="header"
-                    src="https://images.unsplash.com/photo-1518051870910-a46e30d9db16?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="header-img"
-                  />
-                  <div className="information"></div>
-                  <div className="project-Name">The Weather App</div>
-                </div>
-              </div>
-            </Col>
-            <Col className="project" xs={12} md={6}>
-              <img
-                src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1239&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="project_1"
-              />
-              <div className="overlay"></div>
-              <div
-                className="plus"
-                onClick={() => this.setState({ detail_active: true })}
-              ></div>
-              <div
-                className={
-                  this.state.detail_active ? "detail active" : "detail"
-                }
-              >
-                <div className="close"></div>
-
-                <div className="website"></div>
-                <div className="infos">
-                  <img
-                    className="header"
-                    src="https://images.unsplash.com/photo-1518051870910-a46e30d9db16?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="header-img"
-                  />
-                  <div className="information"></div>
-                  <div className="project-Name">The Weather App</div>
-                </div>
-              </div>
-            </Col>
+{ detail_list.map((detail)=><Projects key={detail}  />)}
+        
+         
          
           </Row>
         </Container>
