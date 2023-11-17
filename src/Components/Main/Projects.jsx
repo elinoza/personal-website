@@ -39,16 +39,27 @@ console.log(detail)
                 }
               >
                 <div className="close" onClick={this.detail_toggler}></div>
-
-                <div className="website"></div>
+<div className="links"><div className="website-image">
+                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D"/>
+                  </div>
+                  <div className="fe-link">
+                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D"/>
+                  </div>
+                  <div className="be-link">
+                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D"/>
+                  </div></div>
+               
                 <div className="infos">
                   <img
                     className="header"
                     src="https://images.unsplash.com/photo-1518051870910-a46e30d9db16?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="header-img"
                   />
-                  <div className="information"></div>
-                  <div className="project-Name">The Weather App</div>
+               
+                  <div className="information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur magnam harum, at laboriosam possimus facilis, voluptatibus vitae aliquid fugit accusantium accusamus commodi corrupti iste cum asperiores praesentium quod animi!
+                  </div>
+               
                 </div>
               </div>
             </Col>
