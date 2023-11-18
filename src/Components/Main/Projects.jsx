@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Main.css";
-import "./Main.scss";
+import "./Projects.scss";
 import { Col,Badge } from "react-bootstrap";
 import Projects from "./Projects";
 
@@ -19,7 +19,7 @@ class Main extends Component {
       <>
         <Col className="project" xs={12} md={6}>
           <img
-            src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1239&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={detail}
             alt="project_1"
           />
           <div className="overlay"></div>
@@ -50,16 +50,17 @@ class Main extends Component {
             <div className="infos">
               <img
                 className="header"
-                src="https://images.unsplash.com/photo-1631125915902-d8abe9225ff2?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2VyYW1pY3xlbnwwfHwwfHx8MA%3D%3D"
+                src="https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="header-img"
               />
-
-              <div className="information">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              <p className="header "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 aspernatur magnam harum, at laboriosam possimus facilis,
                 voluptatibus vitae aliquid fugit accusantium accusamus commodi
-                corrupti iste cum asperiores praesentium quod animi!
-              </div>
+                corrupti iste cum asperiores praesentium quod animi!</p>
+                </div>
+              <div className="information">
+               
+
             </div>
           </div>
         </Col>

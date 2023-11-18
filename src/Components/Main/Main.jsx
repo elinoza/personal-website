@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Main.css";
-import "./Main.scss";
+
 import { Col, Row, Container, Button, Badge } from "react-bootstrap";
 import Projects from  "./Projects"
 
