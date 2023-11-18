@@ -33,17 +33,17 @@ class Main extends Component {
               <div className="website-image">
               <Badge  bg="warning">web</Badge>
          
-                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D" />
+                <img src={this.props.detail} />
               </div>
            
               <div className="fe-link">
               <Badge bg="warning">FE</Badge>
             
-                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D" />
+                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
               </div>
               <div className="be-link">
               <Badge bg="warning">BE</Badge>
-                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D" />
+                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
               </div>
             </div>
 

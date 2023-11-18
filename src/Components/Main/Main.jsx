@@ -14,7 +14,8 @@ class Main extends Component {
 
 
   render() {
-    let detail_list=[1,2,3,4]
+    let detail_list=["https://content.linkedin.com/content/dam/brand/site/img/logo/logo-hero.png","https://i.pinimg.com/originals/b1/46/fd/b146fd9f85ae5e6db71ae33184d56412.jpg","https://upload.wikimedia.org/wikipedia/commons/5/52/LinkedIn_Learning_logo.png","https://img.freepik.com/premium-vector/quiz-with-question-mark-sign-icon-questions-answers-game-symbol-vector-isolated-white-background-eps-10_399089-3116.jpg?w=1060"]
+
     return (
       <>
         <Container>
@@ -57,7 +58,7 @@ class Main extends Component {
           </Row>
           <h1>My Projects</h1>
           <Row>
-{ detail_list.map((detail)=><Projects key={detail}  />)}
+{ detail_list.map((detail,index)=><Projects key={index} detail={detail}  />)}
         
          
          

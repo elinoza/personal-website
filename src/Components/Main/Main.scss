@@ -100,9 +100,11 @@ $navy:#1E5375;
         top:70%;
         
      .badge{
+        position:absolute;
         background-color: $yellow!important;
-        width:100%;
-    height:40%;}
+        font-size:0.8em
+  ;
+  ;}
 
         >div {
          
