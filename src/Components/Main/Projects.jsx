@@ -17,12 +17,14 @@ class Main extends Component {
     console.log(detail);
     return (
       <>
-        <Col className="project" xs={12} md={6}>
-          <img
-            src={detail}
+        <Col  xs={12} md={6}>
+        <div className="project">
+        <img
+        className="project-image"
+            src={detail[1]}
             alt="project_1"
           />
-          <div className="overlay"></div>
+          <div className="overlay"><h1>{this.props.detail[2]}</h1></div>
           <div className="plus" onClick={this.detail_toggler}></div>
           <div
             className={this.state.detail_active ? "detail active" : "detail"}
@@ -31,18 +33,18 @@ class Main extends Component {
             <div className="links">
                 
               <div className="website-image">
-              <Badge  bg="warning">web</Badge>
+              <Badge  bg="warning">Live</Badge>
          
-                <img src={this.props.detail} />
+                <img src={this.props.detail[0]} />
               </div>
            
               <div className="fe-link">
-              <Badge bg="warning">FE</Badge>
+              <Badge bg="warning">Fe</Badge>
             
                 <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
               </div>
               <div className="be-link">
-              <Badge bg="warning">BE</Badge>
+              <Badge bg="warning">Be</Badge>
                 <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
               </div>
             </div>
@@ -55,14 +57,14 @@ class Main extends Component {
               />
               <p className="header "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 aspernatur magnam harum, at laboriosam possimus facilis,
-                voluptatibus vitae aliquid fugit accusantium accusamus commodi
-                corrupti iste cum asperiores praesentium quod animi!</p>
+                voluptatibus vitae aliquid </p>
                 </div>
               <div className="information">
                
 
             </div>
           </div>
+        </div>
         </Col>
       </>
     );

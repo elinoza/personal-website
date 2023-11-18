@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Main.css";
+import "./Main.scss";
+
 
 import { Col, Row, Container, Button, Badge } from "react-bootstrap";
 import Projects from  "./Projects"
@@ -14,13 +16,22 @@ class Main extends Component {
 
 
   render() {
-    let detail_list=["https://content.linkedin.com/content/dam/brand/site/img/logo/logo-hero.png","https://i.pinimg.com/originals/b1/46/fd/b146fd9f85ae5e6db71ae33184d56412.jpg","https://upload.wikimedia.org/wikipedia/commons/5/52/LinkedIn_Learning_logo.png","https://img.freepik.com/premium-vector/quiz-with-question-mark-sign-icon-questions-answers-game-symbol-vector-isolated-white-background-eps-10_399089-3116.jpg?w=1060"]
+    let LinkedinLearningPoster="https://i.insider.com/61e861e69386c900185f5fb3?width=700"
+    let linkedinLearningLogo="https://upload.wikimedia.org/wikipedia/commons/5/52/LinkedIn_Learning_logo.png";
+    let linkedinLogo="https://content.linkedin.com/content/dam/brand/site/img/logo/logo-r.png";
+    let linkedinPoster= "https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    let weatherAppLogo="https://i.pinimg.com/564x/75/b3/3e/75b33e0bfbc8b13cd646dca30511f30a.jpg";
+    let weatherAppPoster="https://images.unsplash.com/photo-1630260667842-830a17d12ec9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    let quizLogo="https://img.freepik.com/free-vector/comic-style-question-mark-speech-bubble-background_1017-23978.jpg?w=826&t=st=1700332942~exp=1700333542~hmac=af665bb2cd39b784aaaf37bba6a7189c9b73fc13d5f425f5c069cca18e426423";
+    let quizPoster="https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?q=80&w=1071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    
+    let detail_list=[[linkedinLearningLogo,LinkedinLearningPoster,"Linkedin Learning Clone"],[weatherAppLogo,weatherAppPoster,"The Weather App"],[quizLogo,quizPoster,"Quiz Game"],[linkedinLogo,linkedinPoster,"Linkedin Clone"]]
 
     return (
       <>
         <Container>
           <NavBar />
-          <Row className="vh-100">
+          <Row >
             <Col xs={12} md={6}>
               <div className="my-jumbotron">
                 <h1>Hi! I'm Hilal Semercioğlu </h1>
@@ -57,12 +68,13 @@ class Main extends Component {
             </Col>
           </Row>
           <h1>My Projects</h1>
-          <Row>
+          <Row id="projects-row">
 { detail_list.map((detail,index)=><Projects key={index} detail={detail}  />)}
         
          
          
           </Row>
+          <div>Footer</div>
         </Container>
       </>
     );
