@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Main.css";
 import "./Main.scss";
+import Details from "./Details.json"
 
 
 import { Col, Row, Container, Button, Badge } from "react-bootstrap";
@@ -24,8 +25,9 @@ class Main extends Component {
     let weatherAppPoster="https://images.unsplash.com/photo-1630260667842-830a17d12ec9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
     let quizLogo="https://img.freepik.com/free-vector/comic-style-question-mark-speech-bubble-background_1017-23978.jpg?w=826&t=st=1700332942~exp=1700333542~hmac=af665bb2cd39b784aaaf37bba6a7189c9b73fc13d5f425f5c069cca18e426423";
     let quizPoster="https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?q=80&w=1071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-    
-    let detail_list=[[linkedinLearningLogo,LinkedinLearningPoster,"Linkedin Learning Clone"],[weatherAppLogo,weatherAppPoster,"The Weather App"],[quizLogo,quizPoster,"Quiz Game"],[linkedinLogo,linkedinPoster,"Linkedin Clone"]]
+console.log(Details.length)
+
+    //let detail_list=[[linkedinLearningLogo,LinkedinLearningPoster,"Linkedin Learning Clone"],[weatherAppLogo,weatherAppPoster,"The Weather App"],[quizLogo,quizPoster,"Quiz Game"],[linkedinLogo,linkedinPoster,"Linkedin Clone"]]
 
     return (
       <>
@@ -69,7 +71,7 @@ class Main extends Component {
           </Row>
           <h1>My Projects</h1>
           <Row id="projects-row">
-{ detail_list.map((detail,index)=><Projects key={index} detail={detail}  />)}
+{ Details.map((detail,index)=><Projects key={index} detail={detail}  />)}
         
          
          

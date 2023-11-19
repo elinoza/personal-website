@@ -21,10 +21,10 @@ class Main extends Component {
         <div className="project">
         <img
         className="project-image"
-            src={detail[1]}
+            src={detail.PosterUrl}
             alt="project_1"
           />
-          <div className="overlay"><h1>{this.props.detail[2]}</h1></div>
+          <div className="overlay"><h1>{detail.projectName}</h1></div>
           <div className="plus" onClick={this.detail_toggler}></div>
           <div
             className={this.state.detail_active ? "detail active" : "detail"}
@@ -35,7 +35,7 @@ class Main extends Component {
               <div className="website-image">
               <Badge  bg="warning">Live</Badge>
          
-                <img src={this.props.detail[0]} />
+                <img src={detail.LogoUrl} />
               </div>
            
               <div className="fe-link">
@@ -55,9 +55,10 @@ class Main extends Component {
                 src="https://images.unsplash.com/photo-1570451488142-71d08e1511e3?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="header-img"
               />
-              <p className="header "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                aspernatur magnam harum, at laboriosam possimus facilis,
-                voluptatibus vitae aliquid </p>
+              <div className="header "> {detail.Description}
+              <hr/>
+              <p >The tools used in the project: {detail.Tools.map((elem)=>elem+", ")} </p></div>
+            
                 </div>
               <div className="information">
                

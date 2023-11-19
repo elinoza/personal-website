@@ -4,7 +4,7 @@
     "PosterUrl": "https://i.insider.com/61e861e69386c900185f5fb3?width=700",
     "LogoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/LinkedIn_Learning_logo.png",
     "Description": "I graduated with my solo capstone project, a LinkedIn Learning website clone for watching training videos, skill acquisition, and progress tracking. Project was built in 1 month.",
-    "Tools": ["ReactJS", "NodeJS", "MongoDB", "ExpressJS", "Bootstrap", "Redux ", "videoJS" ],
+    "Tools": ["ReactJS", "NodeJS", "MongoDB", "ExpressJS", "Bootstrap", "Redux ", "videoJS for video player" ],
     "WebUrl":"https://e-learning-platform-fe.vercel.app/",
     "Fe":"https://github.com/elinoza/e-learning-platform-fe",
     "Be":"https://github.com/elinoza/e-learning-platform-be"
@@ -13,31 +13,31 @@
     "projectName": "Weather App",
     "PosterUrl": "https://images.unsplash.com/photo-1630260667842-830a17d12ec9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "LogoUrl": "https://i.pinimg.com/564x/75/b3/3e/75b33e0bfbc8b13cd646dca30511f30a.jpg",
-    "Description": "Weather App is a web application that provides weather information for cities around the world.The weather data is obtained from the openweatherapp.org API.",
-    "Tools": [ "ReactJS", "NodeJS", MongoDB,ExpressJS, Bootstrap.",
-    "WebUrl":"https://e-learning-platform-fe.vercel.app/",
-    "Fe":"https://github.com/elinoza/e-learning-platform-fe",
-    "Be":"https://github.com/elinoza/e-learning-platform-be"
+    "Description": "Weather App is a web application that provides weather information for cities around the world.",
+    "Tools": [ "ReactJS", "NodeJS", "MongoDB","ExpressJS", "Bootstrap","Hooks","OpenWeather.org API","Axios (API requests)","sendGrid for SMS Delivery"],
+    "WebUrl":"weather-app-elinoza.vercel.app",
+    "Fe":"https://github.com/elinoza/Weather-App",
+    "Be": "https://github.com/elinoza/weather-app-be"
   },
   {
-    "projectName": "Weather App",
-    "PosterUrl": "",
-    "LogoUrl": "",
-    "Description": "",
-    "Tools": "",
-    "WebUrl":"https://e-learning-platform-fe.vercel.app/",
-    "Fe":"https://github.com/elinoza/e-learning-platform-fe",
-    "Be":"https://github.com/elinoza/e-learning-platform-be"
+    "projectName": "Quiz Game",
+    "PosterUrl": "https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?q=80&w=1071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "LogoUrl": "https://img.freepik.com/free-vector/comic-style-question-mark-speech-bubble-background_1017-23978.jpg?w=826&t=st=1700332942~exp=1700333542~hmac=af665bb2cd39b784aaaf37bba6a7189c9b73fc13d5f425f5c069cca18e426423",
+    "Description": "This is a JavaScript quiz application that asks users questions and provides them with scores.All the animations are made by vanilla CSS.",
+    "Tools": [ "ReactJS", "NodeJS", "MongoDB","ExpressJS", "Bootstrap"],
+    "WebUrl":"https://quiz-fe-elinoza.vercel.app/",
+    "Fe":"https://github.com/elinoza/quiz-fe",
+    "Be":"https://github.com/elinoza/quiz-be"
   },
   {
-    "projectName": "Weather App",
-    "PosterUrl": "",
-    "LogoUrl": "",
-    "Description": "",
-    "Tools": "",
-    "WebUrl":"https://e-learning-platform-fe.vercel.app/",
-    "Fe":"https://github.com/elinoza/e-learning-platform-fe",
-    "Be":"https://github.com/elinoza/e-learning-platform-be"
+    "projectName": "Linkedin Clone",
+    "PosterUrl": "https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "LogoUrl": "https://content.linkedin.com/content/dam/brand/site/img/logo/logo-r.png",
+    "Description":"In boot camp we built  apps as randomly selected teams. One of the project was LinkedIn Website Clone where people can interact each other professionally.Project was made in 2 weeks.",
+    "Tools": [ "ReactJS", "NodeJS", "MongoDB","ExpressJS", "Bootstrap"],
+    "WebUrl":"linkedin-frontend-peach.vercel.app",
+    "Fe":"https://github.com/elinoza/LinkedIn-BW-M6-Frontend",
+    "Be":"https://github.com/elinoza/Linkedln-BW-M6"
   }
 
 ]
