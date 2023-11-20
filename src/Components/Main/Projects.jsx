@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Main.css";
 import "./Projects.scss";
 import { Col,Badge } from "react-bootstrap";
-import Projects from "./Projects";
+
 
 class Main extends Component {
   state = {
@@ -30,24 +30,7 @@ class Main extends Component {
             className={this.state.detail_active ? "detail active" : "detail"}
           >
             <div className="close" onClick={this.detail_toggler}></div>
-            <div className="links">
-                
-              <div className="website-image">
-              <Badge  bg="warning">Live</Badge>
-         
-                <img src={detail.LogoUrl} />
-              </div>
            
-              <div className="fe-link">
-              <Badge bg="warning">Fe</Badge>
-            
-                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
-              </div>
-              <div className="be-link">
-              <Badge bg="warning">Be</Badge>
-                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
-              </div>
-            </div>
 
             <div className="infos">
               <img
@@ -61,6 +44,24 @@ class Main extends Component {
             
                 </div>
               <div className="information">
+              <div className="links">
+                
+                <div className="website-image">
+                <Badge  bg="warning">Live</Badge>
+           
+                  <img src={detail.LogoUrl} />
+                </div>
+             
+                <div className="fe-link">
+                <Badge bg="warning">Fe</Badge>
+              
+                  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
+                </div>
+                <div className="be-link">
+                <Badge bg="warning">Be</Badge>
+                  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
+                </div>
+              </div>
                
 
             </div>

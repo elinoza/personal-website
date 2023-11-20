@@ -1,5 +1,5 @@
 $red:#E5553C;
-$brown:#A04F15;
+$brown:#AF8C66;
 $orange:#CA3E0E;
 $pink:#EDACC4;
 $green:#035B23;
@@ -13,22 +13,22 @@ $navy:#1E5375;
 
     cursor: pointer;
     position: relative;
-    width:100%;
-    height:100%;
-  
+    width: 100%;
+    height: 100%;
 
-    background:$beige;
-    .project-image{
-        object-fit:cover;
-        height:100%;
-    
+
+    background: $beige;
+
+    .project-image {
+        object-fit: cover;
+        height: 100%;
+
 
     }
 
     .overlay {
-color:white;
-padding:10px;
-
+        color: white;
+        padding: 10px;
         position: absolute;
         top: 2px;
         left: 2px;
@@ -37,8 +37,9 @@ padding:10px;
         background-color: #000;
         opacity: 0;
         transition: all 0.6s ease-in-;
-        h1{
-            font-size:5em;
+
+        h1 {
+            font-size: 4em;
         }
     }
 
@@ -46,15 +47,17 @@ padding:10px;
         position: absolute;
         top: 50%;
         left: 50%;
-        background-color:$red;
+        background-color: $red;
         width: 50px;
         height: 50px;
         box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.5);
         border-radius: 50%;
         opacity: 0;
-        transform: translate(-50%, -50%) scale(2);
+        transform: translate(-50%, -50%) rotate(45deg);
         transition: all .4s ease-in-out;
         z-index: 0;
+
+
 
         &:before {
             position: absolute;
@@ -62,9 +65,12 @@ padding:10px;
             left: 50%;
             transform: translate(-50%, -50%);
             content: '';
-            width: 16px;
-            height: 3px;
-            background-color: white;
+            width: 15px;
+            height: 15px;
+            border-left: 3px solid white;
+            border-top: 3px solid white;
+
+
 
         }
 
@@ -75,20 +81,37 @@ padding:10px;
             transform: translate(-50%, -50%);
             content: '';
             width: 3px;
-            height: 16px;
+            height: 18px;
             background-color: white;
-
+            transform: translate(-0.5px, -8px) rotate(-45deg)
         }
     }
 
     &:hover {
         .plus {
             opacity: 1;
-            transform: translate(-50%, -50%) scale(1);
+
+            animation: spin 5s infinite linear;
+
+            @keyframes spin {
+                0% {
+
+                    transform: translate(-50%, -50%)rotate(45deg)
+                }
+
+                100% {
+
+
+
+                    transform: translate(-50%, -50%) rotate(360deg)
+                }
+            }
+
+            ;
         }
 
         .overlay {
-            opacity: 0.3
+            opacity: 0.7
         }
 
     }
@@ -107,67 +130,26 @@ padding:10px;
     z-index: 0;
 
 
-    .links {
-
-        position: absolute;
-        z-index: 3;
-        display: flex;
-        justify-content: space-around;
-        z-index: 3;
-        width: 100%;
-        top:70%;
-
-        img{
-            align-self:center;
-        }
-        
-     .badge{
-        position:absolute;
-        background-color: $yellow!important;
-        font-size:0.8em;
-        padding-left:10px;
-  ;
-  ;}
-
-        >div {
-         display:flex;
-            opacity: 0;
-            width: 60px;
-            height: 60px;
-            box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.5);
-            border-radius: 50%;
-            border: 1.5px solid white;
-            object-fit: cover;
-            transition: 1s ease-in-out;
-            overflow: hidden;
-            cursor: pointer;
-            transform: scale(2);
-            transition: all .4s ease-in-out;
-
-            
-
-        }
 
 
-    }
-    
 
     .header {
         position: absolute;
-        color:white;
-    
-      
-       object-fit: cover;
-    
+        color: white;
+
+
+        object-fit: cover;
+
         width: 100%;
         height: 75%;
-  
+
         transform: translate3d(0, -105%, 0);
         transition: all 0.6s ease-in 0.4s;
-        overflow:hidden;
-   +div{ 
-    padding:30px;
-}
+        overflow: hidden;
+
+        +div {
+            padding: 40px;
+        }
     }
 
     .close {
@@ -211,25 +193,73 @@ padding:10px;
 
             &:after,
             &:before {
-                background-color:$red;
+                background-color: $red;
             }
 
         }
 
     }
 
-    .information{
+    .information {
         position: absolute;
-        background-color:$beige;
+        background-color: $beige;
+        display: flex;
+        align-items: center;
 
         bottom: 0px;
-     
+
         width: 100%;
         height: 25%;
 
         transform: translate3d(0, 105%, 0);
         transition: all 0.6s ease-in 0.4s;
 
+        .links {
+
+
+
+            z-index: 3;
+            display: flex;
+            justify-content: space-around;
+            z-index: 3;
+            width: 100%;
+            ;
+
+            img {
+                align-self: center;
+            }
+
+            .badge {
+                opacity: 0;
+                position: absolute;
+                background-color: $brown !important;
+                font-size: 0.8em;
+                width: 100%;
+
+            }
+
+            >div {
+                display: flex;
+                opacity: 0;
+                max-width: 50px;
+                max-height: 50px;
+                background-color: $beige;
+                box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.5);
+                border-radius: 50%;
+                border: 1.5px solid white;
+                object-fit: cover;
+                transition: 1s ease-in-out;
+                overflow: hidden;
+                cursor: pointer;
+                transform: scale(1.5);
+                transition: all .4s ease-in-out;
+
+
+
+            }
+
+
+        }
 
 
 
@@ -260,13 +290,18 @@ padding:10px;
         }
 
         .links>div {
-                opacity: 1;
-                transform: scale(1);
-                &:hover {
-                    transform: scale(1.5);
-                }
+            opacity: 1;
+            transform: scale(1);
 
-       
+            &:hover {
+                transform: scale(1.5);
+
+                .badge {
+                    opacity: 1;
+                }
+            }
+
+
 
 
 
