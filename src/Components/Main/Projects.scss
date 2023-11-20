@@ -88,6 +88,7 @@ $navy:#1E5375;
     }
 
     &:hover {
+       
         .plus {
             opacity: 1;
 
@@ -149,6 +150,8 @@ $navy:#1E5375;
 
         +div {
             padding: 40px;
+            width:100%;
+            overflow-y: auto;
         }
     }
 
@@ -270,6 +273,7 @@ $navy:#1E5375;
     &.active {
 
         pointer-events: all;
+
 
         .header {
             transform: translate3d(0, 0, 0);

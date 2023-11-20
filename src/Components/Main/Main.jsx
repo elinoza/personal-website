@@ -17,17 +17,8 @@ class Main extends Component {
 
 
   render() {
-    let LinkedinLearningPoster="https://i.insider.com/61e861e69386c900185f5fb3?width=700"
-    let linkedinLearningLogo="https://upload.wikimedia.org/wikipedia/commons/5/52/LinkedIn_Learning_logo.png";
-    let linkedinLogo="https://content.linkedin.com/content/dam/brand/site/img/logo/logo-r.png";
-    let linkedinPoster= "https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    let weatherAppLogo="https://i.pinimg.com/564x/75/b3/3e/75b33e0bfbc8b13cd646dca30511f30a.jpg";
-    let weatherAppPoster="https://images.unsplash.com/photo-1630260667842-830a17d12ec9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-    let quizLogo="https://img.freepik.com/free-vector/comic-style-question-mark-speech-bubble-background_1017-23978.jpg?w=826&t=st=1700332942~exp=1700333542~hmac=af665bb2cd39b784aaaf37bba6a7189c9b73fc13d5f425f5c069cca18e426423";
-    let quizPoster="https://images.unsplash.com/photo-1570303345338-e1f0eddf4946?q=80&w=1071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+   
 console.log(Details.length)
-
-    //let detail_list=[[linkedinLearningLogo,LinkedinLearningPoster,"Linkedin Learning Clone"],[weatherAppLogo,weatherAppPoster,"The Weather App"],[quizLogo,quizPoster,"Quiz Game"],[linkedinLogo,linkedinPoster,"Linkedin Clone"]]
 
     return (
       <>
