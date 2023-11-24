@@ -22,11 +22,7 @@ h6 {
     background-image: url("https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white");
 }
 
-.css {
-    border:1px black solid;
-    background-repeat: no-repeat;
-    background-image: url("https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white")
-}
+
 #skill-set{
     display: flex;
     align-items: center;

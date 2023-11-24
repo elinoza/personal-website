@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import "./Main.css";
+
 import "./Main.scss";
 import Details from "./Details.json"
+import { FaInstagram,FaLinkedin } from "react-icons/fa";
+
 
 
 import { Col, Row, Container, Button, Badge } from "react-bootstrap";
@@ -27,7 +29,7 @@ console.log(Details.length)
           <Row >
             <Col xs={12} md={6}>
               <div className="my-jumbotron">
-                <h1>Hi! I'm Hilal Semercioğlu </h1>
+                <h1>Hi! I'm Hilal  </h1>
                 <p>
                   a Full Stack Developer{" "}
                   <Badge bg="warning">Frontend/Backend</Badge> with a passion
@@ -35,8 +37,8 @@ console.log(Details.length)
                 </p>
 
                 <div className="d-flex justify-content-center">
-                  <Button className="mr-2">Contact Me</Button>
-                  <Button>My Portfolio</Button>
+                <FaInstagram />
+                <FaLinkedin />
                 </div>
               </div>
             </Col>

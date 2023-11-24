@@ -11,7 +11,7 @@
   },
   {
     "projectName": "Weather App",
-    "PosterUrl": "https://res.cloudinary.com/elinoza/image/upload/v1700480859/DALL_E_2023-11-20_14.47.13_-_Create_a_soft-toned_digital_illustration_depicting_a_hurricane_on_a_map_similar_to_the_previous_images_but_with_the_addition_of_temperature_readings_gen0nu.png",
+    "PosterUrl": "https://res.cloudinary.com/elinoza/image/upload/v1700552389/DALL_E_2023-11-21_10.31.44_-_In_a_minimal_and_soft_environment_a_woman_is_seen_from_a_slight_rear_angle_looking_at_her_laptop_with_an_umbrella_beside_her._The_laptop_displays_a_up8mzu.png",
     "LogoUrl": "https://i.pinimg.com/564x/75/b3/3e/75b33e0bfbc8b13cd646dca30511f30a.jpg",
     "Description": "Weather App is a web application that provides weather information for cities around the world.",
     "Tools": [ "ReactJS", "NodeJS", "MongoDB","ExpressJS", "Bootstrap","Hooks","OpenWeather.org API","Axios (API requests)","sendGrid for SMS Delivery"],
@@ -21,7 +21,7 @@
   },
   {
     "projectName": "Quiz Game",
-    "PosterUrl": "https://res.cloudinary.com/elinoza/image/upload/v1700480720/DALL_E_2023-11-20_14.44.22_-_A_digital_wallpaper_illustration_with_the_word_Quiz_prominently_featured._The_design_is_composed_of_soft_colors_like_beige_and_blush_with_a_backgro_kgvuyi.png",
+    "PosterUrl": "https://res.cloudinary.com/elinoza/image/upload/v1700552276/DALL_E_2023-11-21_10.35.56_-_A_young_child_in_their_bedroom_slightly_excited_playing_a_quiz_on_their_laptop._The_child_is_seen_from_a_side_angle_and_the_laptop_screen_has_the_w_yutgnt.png",
     "LogoUrl": "https://img.freepik.com/free-vector/comic-style-question-mark-speech-bubble-background_1017-23978.jpg?w=826&t=st=1700332942~exp=1700333542~hmac=af665bb2cd39b784aaaf37bba6a7189c9b73fc13d5f425f5c069cca18e426423",
     "Description": "This is a JavaScript quiz application that asks users questions and provides them with scores.All the animations are made by vanilla CSS.",
     "Tools": [ "ReactJS", "NodeJS", "MongoDB","ExpressJS", "Bootstrap"],
