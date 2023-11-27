@@ -1,10 +1,15 @@
-import React, { Component } from "react";
+import React,{ useState, useContext} from "react";
+
 
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
+import {ThemeContext,Themes} from "../../contexts/theme"
 
-class NavBar extends Component {
-  state = {};
-  render() {
+
+function NavBar () {
+
+  const [theme,setTheme] = useContext(ThemeContext)
+
+console.log()
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
@@ -21,7 +26,9 @@ class NavBar extends Component {
               </div>
             
             </div>
+           
           </Navbar.Brand>
+     
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -36,5 +43,5 @@ class NavBar extends Component {
       </Navbar>
     );
   }
-}
+
 export default NavBar;

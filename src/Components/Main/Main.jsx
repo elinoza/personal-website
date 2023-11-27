@@ -2,13 +2,11 @@ import React, { Component } from "react";
 import "./Main.scss";
 import Details from "./Details.json";
 import Logos from "./Logos.json"
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import {FaLinkedin } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
-
 import { Col, Row, Container, Button, Badge } from "react-bootstrap";
 import Projects from "./Projects";
-
 import NavBar from "./NavBar";
 
 class Main extends Component {
@@ -16,22 +14,7 @@ class Main extends Component {
 
   render() {
     console.log(Details.length,Logos);
- let logos= [
-  "https://www.svgrepo.com/show/508837/html5-01.svg",
-  "https://www.svgrepo.com/show/508794/css3-01.svg",
-  "https://w7.pngwing.com/pngs/628/224/png-transparent-bootstrap-plain-wordmark-logo-icon-thumbnail.png",
-  "https://www.svgrepo.com/show/353925/javascript.svg",
-  "https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-512.png",
-  "https://www.svgrepo.com/show/354118/nodejs.svg",
-  "https://www.svgrepo.com/show/448274/azure.svg",
-  "https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo-500x289.jpg",
-  "https://www.svgrepo.com/show/353724/express.svg",
-  "https://www.unixmen.com/wp-content/uploads/2017/07/postgresql-logo.png",
-  "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png",
-  "https://www.svgrepo.com/show/303683/heroku-logo.svg",
-  "https://cdn-images-1.medium.com/max/480/1*2YG993b8WrHwvmAe7WckAA.png",
-  "https://www.svgrepo.com/show/374061/sass.svg",
-]
+
     return (
       <>
         <Container>
@@ -80,7 +63,7 @@ class Main extends Component {
               <h1> SKILLS</h1>
 
               <div id="skill-set">
-                {logos.map((elem) => (
+                {Logos.map((elem) => (
                   <div className="skill-icon">
                     <img src={elem} />
                   </div>
