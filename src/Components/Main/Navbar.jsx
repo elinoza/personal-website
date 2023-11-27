@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Main.css";
+
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
 
 class NavBar extends Component {
@@ -25,9 +25,9 @@ class NavBar extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">About</Nav.Link>
-              <Nav.Link href="#link">Projects</Nav.Link>
-              <Nav.Link className="download_cv" href="#link">
+              <Nav.Link href="#about-section">About</Nav.Link>
+              <Nav.Link href="#projects-section">Projects</Nav.Link>
+              <Nav.Link className="download_cv" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/117OEe3QYer644yUGYgagZDHooJozFPoT/view?usp=sharing">
                 Download CV
               </Nav.Link>
             </Nav>

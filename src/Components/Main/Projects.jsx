@@ -44,7 +44,7 @@ className="d-inline"
     console.log(detail);
     return (
       <>
-        <Col className="parent-col" xs={12} md={6}>
+        <Col id ="projects-section" className="parent-col" xs={12} md={6}>
         <div className="project">
         <img
         className="project-image"

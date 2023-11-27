@@ -1,173 +1,52 @@
-$font-size:1.2em;
-$divider:7;
+@import "./AnimatedEye";
+@import "SlidingText";
+@import "Colors";
 
 
-
-
-
-.first-row {
-    min-height: 75vh;
-}
 
 .navbar {
 
-    
+    &.bg-body-tertiary {
+
+        --bs-bg-opacity: 0;
+
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+
+
+    }
 
     .download_cv {
         color: rgb(188, 161, 40);
         font-weight: bolder;
     }
 }
-.bg-body-tertiary {
-
-    --bs-bg-opacity: 0;
-
-}
-.navbar-collapse{
-    flex-grow:0;
-    
-    
-        }
-
-.animated-eye {
-
-    position: absolute;
-    background: #363847;
-top:0px;
-
-    z-index: 5;
-    width: 400/$divider+px;
-    height: 400/$divider+px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .eye {
 
 
-        position: relative;
-        width: 200/$divider+px;
-        height: 200/$divider+px;
-        background: #D9D8D8;
-        border-radius: 100% 0;
-        transform: rotate(45deg);
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden
-    }
 
-    .iris {
-        width: 130/$divider+px;
-        height: 130/$divider+px;
-        background: radial-gradient(circle, rgba(63, 171, 251, 1) 28%, rgba(55, 193, 222, 1) 54%, rgba(52, 175, 210, 1) 65%);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        animation: eyeball 5s infinite
-    }
-
-    .pupil {
-
-        width: 40/$divider+px;
-        height: 40/$divider+px;
-        background-color: #0d3552;
-        border-radius: 50%;
-
-    }
-
-    .eye-lid-top {
-
-        position: absolute;
-        top: 40/$divider+px;
-        width: 300/$divider+px;
-        height: 100/$divider+px;
-        background: #363847;
-        z-index: 1;
-        animation: top 5s ease-in-out infinite
-    }
-
-    .eye-lid-bottom {
-        position: absolute;
-        bottom: 40/$divider+px;
-        width: 300/$divider+px;
-        height: 100/$divider+px;
-        z-index: 1;
-        background: #363847;
-        animation: bottom 5s ease-in-out infinite
-    }
-
-    @keyframes top {
-
-        0%,
-        18%,
-        22%,
-        50%,
-        55%,
-        80%,
-        88% {
-            transform: translateY(0px);
-        }
-
-        20%,
-        53%,
-        84% {
-            transform: translateY(100/$divider+px);
-        }
-    }
-
-    @keyframes bottom {
-
-        0%,
-        18%,
-        22%,
-        50%,
-        55%,
-        80%,
-        88% {
-            transform: translateY(0px);
-        }
-
-        20%,
-        53%,
-        84% {
-            transform: translateY(-20/$divider+px);
-        }
-    }
-
-    @keyframes eyeball {
-
-        0%,
-        10%,
-        53%,
-        60%,
-        73% {
-            transform: scale(1.1) translate(0);
-        }
-
-        15%,
-        30% {
-            transform: translate(-10/$divider+px, 50/$divider+px);
-        }
-
-        34%,
-        50% {
-            transform: translate(-30/$divider+px, 0px);
-        }
-
-        64%,
-        70% {
-            transform: translate(50/$divider+px, -20/$divider+px);
-        }
-    }
+.first-row {
+    min-height: fit-content;
 
 }
+
 
 .my-jumbotron {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+        margin-bottom: 20px
+    }
+
+    padding: 30px;
+    margin-top: 20px;
+
     &:not(.icon) {
         font-size: $font-size;
     }
@@ -188,93 +67,41 @@ top:0px;
         }
     }
 
-
-}
-
-
-.jumbotron-body {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.sliding-wrapper {
-    position: relative;
-    height: $font-size*1.5;
-    width: fit-content;
-
-
-    .primary-sliding-wrapper {
-        position: relative;
-        display: inline;
-        padding-left: 5px;
-        padding-right: 5px;
-        color: white;
+    .jumbotron-body {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .blank-div {
-        position: absolute;
-        overflow: hidden;
-        padding-left: 3px;
-        padding-right: 3px;
-        height: $font-size *1.5;
-        z-index: 4;
-        width: max-content;
-
-        top: -6px;
-        bottom: 0px;
-        right: 0px;
-        left: 0px;
+}
 
 
-        .sliding-parent {
 
+.skills-section {
+    background-color:$beige;
+}
 
-            color: black;
-            animation: slide 8s ease-in-out infinite;
+#skill-set {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
-            @keyframes slide {
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        margin:10px;
 
-                0%,
-                30% {
-                    transform: translateY(0);
-                }
-
-                35%,
-                65% {
-                    transform: translateY($font-size * -1.5);
-                }
-
-                ;
-
-                70%,
-                100% {
-                    transform: translateY($font-size * -3)
-                }
-
-                ;
-            }
-
-            .sliding-element {
-                text-shadow: 2px 2px 2px #e67e22;
-
-            }
+        img {
+            width: 100%;
 
 
         }
     }
-
 }
-
-
-
-.skill-icon{
-    width:50px;
-    border-radius:50%;
-    background-color:white;
-    padding:10px;
-
-}
-
 
 
 
