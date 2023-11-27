@@ -59,10 +59,18 @@
         color: rgb(0, 0, 0);
         transition: 0.2s ease-in-out;
         cursor: pointer;
+        
 
         &:hover {
-            color: rgb(94, 92, 92);
+          
             transform: scale(1.1);
+            &:nth-child(1){
+                color: $red;
+            }
+            &:nth-child(2){
+                color: $navy;
+            }
+        
 
         }
     }
