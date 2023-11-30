@@ -2,7 +2,14 @@
 @import "SlidingText";
 @import "Colors";
 
-
+.dark-wrapper {
+    background-color: whitesmoke;
+    filter: invert(1) hue-rotate(180deg);
+    .dark-wrapper img:not(.icon-img){
+      filter: invert(1) hue-rotate(180deg);
+    }
+  }
+  
 
 .navbar {
 

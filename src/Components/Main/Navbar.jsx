@@ -3,31 +3,44 @@ import React,{ useState, useContext} from "react";
 
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
 import {ThemeContext,Themes} from "../../contexts/theme"
+import AnimatedEye from "./AnimatedEye";
+import ThemeToggler from "./themeToggler";
 
 
 function NavBar () {
 
   const [theme,setTheme] = useContext(ThemeContext)
 
-console.log()
+console.log(theme)
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
             {" "}
-            <div className="animated-eye">
-              {" "}
-              <div class="eye-lid-top"> </div>
-              <div class="eye-lid-bottom"> </div>
-              <div class="eye">
-                <div class="iris">
-                  <div class="pupil"></div>
-                </div>
-              </div>
-            
-            </div>
+
+            <div className="sliding-wrapper ">
+                    {" "}
+                    <div className="pre d-inline">
+                      I'm a{" "}
+                      <div className="primary-sliding-wrapper">
+                        {" "}
+                        full-stack{" "}
+                        <div className="blank-div">
+                          <div className="sliding-parent">
+                            <div className="sliding-element"> Frontend</div>
+                            <div className="sliding-element"> Backend</div>
+                            <div className="sliding-element"> Full-Stack</div>
+                          </div>
+                        </div>{" "}
+                      </div>{" "}
+                      Developer
+                    </div>{" "}
+                  </div>
            
           </Navbar.Brand>
+          <ThemeToggler/>
+        
+          
      
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

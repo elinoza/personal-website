@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { useContext,useState } from "react";
 import "./Main.scss";
+import AnimatedEye from "./AnimatedEye";
 import Details from "./Details.json";
 import Logos from "./Logos.json"
 import {FaLinkedin } from "react-icons/fa";
@@ -8,40 +9,24 @@ import { SiGmail } from "react-icons/si";
 import { Col, Row, Container, Button, Badge } from "react-bootstrap";
 import Projects from "./Projects";
 import NavBar from "./NavBar";
+import {ThemeContext,Themes} from "../../contexts/theme"
 
-class Main extends Component {
-  state = {};
+ function Main() {
+  const [theme,setTheme] = useContext(ThemeContext)
 
-  render() {
+
     console.log(Details.length,Logos);
 
     return (
       <>
-        <Container>
+        <Container className={`${theme === Themes.dark ? "dark-wrapper" : "light-wrapper"}`}>
           <NavBar />
           <Row id="about-section" className="first-row">
             <Col xs={12} md={6}>
               <div className="my-jumbotron">
-                <h1>Hi! I'm Hilal </h1>
+           < div style={{position:"relative"}}> <h1>Hi! I'm Hilal </h1> <AnimatedEye/></div>   
                 <div className="jumbotron-body">
-                  <div className="sliding-wrapper ">
-                    {" "}
-                    <div className="pre d-inline">
-                      I'm a{" "}
-                      <div className="primary-sliding-wrapper">
-                        {" "}
-                        full-stack{" "}
-                        <div className="blank-div">
-                          <div className="sliding-parent">
-                            <div className="sliding-element"> Frontend</div>
-                            <div className="sliding-element"> Backend</div>
-                            <div className="sliding-element"> Full-Stack</div>
-                          </div>
-                        </div>{" "}
-                      </div>{" "}
-                      Developer
-                    </div>{" "}
-                  </div>
+                 
                   <p className="d-inline">
                     I'm passionate for building awesome web applications! I'm an
                     industrial/System Engineer.I successfully completed a
@@ -65,7 +50,7 @@ class Main extends Component {
               <div id="skill-set">
                 {Logos.map((elem) => (
                   <div className="skill-icon">
-                    <img src={elem} />
+                    <img className= "icon-img" src={elem} />
                   </div>
                 ))}
               </div>
@@ -81,7 +66,7 @@ class Main extends Component {
         </Container>
       </>
     );
-  }
+  
 }
 
 export default Main;

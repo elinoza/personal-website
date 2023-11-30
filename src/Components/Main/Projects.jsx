@@ -76,7 +76,7 @@ className="d-inline"
                 <div className="website-image">
                 <Badge  bg="warning">Live</Badge>
            
-                  <img src={detail.LogoUrl} />
+                  <img   src={detail.LogoUrl} />
                 </div>
              
                 <div className="fe-link">
@@ -86,7 +86,7 @@ className="d-inline"
                 </div>
                 <div className="be-link">
                 <Badge bg="warning">Be</Badge>
-                  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
+                  <img  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
                 </div>
               </div>
                

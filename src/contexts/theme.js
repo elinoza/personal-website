@@ -4,4 +4,4 @@ export const Themes = {
   dark: "dark",
   light: "light",
 };
-export const initialState = Themes.Clear;
+export const initialState = Themes.light;
