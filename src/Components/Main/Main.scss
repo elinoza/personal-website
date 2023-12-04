@@ -3,12 +3,19 @@
 @import "Colors";
 
 .dark-wrapper {
+
     background-color: whitesmoke;
     filter: invert(1) hue-rotate(180deg);
-    .dark-wrapper img:not(.icon-img){
+  img{
       filter: invert(1) hue-rotate(180deg);
+  
     }
+    .icon-img{
+        filter:none
+    }
+    
   }
+
   
 
 .navbar {
@@ -51,7 +58,8 @@
         margin-bottom: 20px
     }
 
-    padding: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
     margin-top: 20px;
 
     &:not(.icon) {

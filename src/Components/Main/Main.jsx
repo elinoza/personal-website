@@ -24,9 +24,26 @@ import {ThemeContext,Themes} from "../../contexts/theme"
           <Row id="about-section" className="first-row">
             <Col xs={12} md={6}>
               <div className="my-jumbotron">
-           < div style={{position:"relative"}}> <h1>Hi! I'm Hilal </h1> <AnimatedEye/></div>   
+           < div style={{position:"relative"}}> <h1>Hi! I'm Hilal </h1> </div>   
                 <div className="jumbotron-body">
-                 
+                <div className="sliding-wrapper ">
+                    {" "}
+                    <div className="pre d-inline">
+                      I'm a{" "}
+                      <div className="primary-sliding-wrapper">
+                        {" "}
+                        full-stack{" "}
+                        <div className="blank-div">
+                          <div className="sliding-parent">
+                            <div className="sliding-element"> Frontend</div>
+                            <div className="sliding-element"> Backend</div>
+                            <div className="sliding-element"> Full-Stack</div>
+                          </div>
+                        </div>{" "}
+                      </div>{" "}
+                      Developer
+                    </div>{" "}
+                  </div>
                   <p className="d-inline">
                     I'm passionate for building awesome web applications! I'm an
                     industrial/System Engineer.I successfully completed a

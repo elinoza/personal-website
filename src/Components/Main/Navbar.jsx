@@ -15,30 +15,17 @@ console.log(theme)
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#home">
-            {" "}
+         
+          <Navbar.Brand className="d-flex" href="#home">
+          <div style={{width:"57.1428571429px", marginRight:"10px"}}><AnimatedEye/></div>
+            
+          <ThemeToggler/>
 
-            <div className="sliding-wrapper ">
-                    {" "}
-                    <div className="pre d-inline">
-                      I'm a{" "}
-                      <div className="primary-sliding-wrapper">
-                        {" "}
-                        full-stack{" "}
-                        <div className="blank-div">
-                          <div className="sliding-parent">
-                            <div className="sliding-element"> Frontend</div>
-                            <div className="sliding-element"> Backend</div>
-                            <div className="sliding-element"> Full-Stack</div>
-                          </div>
-                        </div>{" "}
-                      </div>{" "}
-                      Developer
-                    </div>{" "}
-                  </div>
+           
            
           </Navbar.Brand>
-          <ThemeToggler/>
+      
+        
         
           
      
