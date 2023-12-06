@@ -1,6 +1,6 @@
 import React,{useContext} from "react";
 import {Form} from "react-bootstrap"
-import { ThemeContext, Themes} from "../../contexts/theme";
+import { ThemeContext, Themes} from "../contexts/theme";
 
 export default function ThemeToggler(){
     const [theme,setTheme] =useContext(ThemeContext)

@@ -1,6 +1,6 @@
-@import "./AnimatedEye";
-@import "SlidingText";
-@import "Colors";
+@import "../Animations/AnimatedEye";
+@import "../../Components/partials/SlidingText.scss";
+@import "../partials/Colors";
 
 .dark-wrapper {
 
@@ -41,7 +41,7 @@
 
 
 .first-row {
-    min-height: fit-content;
+    min-height: 75vh;
 
 }
 
@@ -68,9 +68,18 @@ padding-bottom: 30px;
 
     line-height: $font-size*1.5;
 
+   
+
+    .jumbotron-body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   
+
     .icon {
         font-size: 1.5em;
-        margin-right: 20px;
+     
         color: rgb(0, 0, 0);
         transition: 0.2s ease-in-out;
         cursor: pointer;
@@ -79,21 +88,25 @@ padding-bottom: 30px;
         &:hover {
           
             transform: scale(1.1);
-            &:nth-child(1){
+            &:nth-child(2){
                 color: $red;
             }
-            &:nth-child(2){
+            &:nth-child(3){
                 color: $navy;
             }
         
 
         }
     }
+    .contacts{ 
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
 
-    .jumbotron-body {
-        display: flex;
-        flex-wrap: wrap;
     }
+
+
 
 }
 
@@ -118,6 +131,36 @@ padding-bottom: 30px;
         align-items: center;
         margin:10px;
 
+   
+      
+        &:hover{
+     
+            animation: hop 0.5s linear;
+
+            @keyframes hop {
+                0% {
+
+                    transform: rotate(0deg) scale(1.1)
+                }
+               25%{
+                    transform: rotate(10deg) scale(1.1)
+
+                }
+                50%{
+                    transform: rotate(-10deg)scale(1.1)
+
+                }
+                
+
+                100% {
+
+
+
+                    transform:  rotate(0deg)scale(1)
+                }
+            }
+        }
+
         img {
             width: 100%;
 
@@ -133,6 +176,8 @@ padding-bottom: 30px;
 
 
 #projects-row {
+    margin-top: 30px;
+    padding-top: 30px;
     >div {
         padding: 4px
     }

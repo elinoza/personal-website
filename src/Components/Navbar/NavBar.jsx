@@ -3,8 +3,8 @@ import React,{ useState, useContext} from "react";
 
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
 import {ThemeContext,Themes} from "../../contexts/theme"
-import AnimatedEye from "./AnimatedEye";
-import ThemeToggler from "./themeToggler";
+import AnimatedEye from "../Animations/AnimatedEye";
+import ThemeToggler from "../themeToggler";
 
 
 function NavBar () {
@@ -35,7 +35,7 @@ console.log(theme)
               <Nav.Link href="#about-section">About</Nav.Link>
               <Nav.Link href="#projects-section">Projects</Nav.Link>
               <Nav.Link className="download_cv" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/117OEe3QYer644yUGYgagZDHooJozFPoT/view?usp=sharing">
-                Download CV
+              CV
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
