@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./Main.scss";
-
+import AnimatedEye from "../Animations/AnimatedEye";
 import Details from "../../Utils/Details.json";
 import Logos from "../../Utils/Logos.json";
 import { FaLinkedin,FaGithub } from "react-icons/fa";
@@ -30,9 +30,9 @@ function Main() {
               <Col xs={12} md={9} >
                 {" "}
                 <div >
-                  <div style={{ position: "relative" }}>
+                  <div className="">
                     {" "}
-                    <h1>Hi! I'm Hilal </h1>{" "}
+                    <h1 className="d-inline">Hi! I'm Hilal </h1>{" "}<AnimatedEye/>
                   </div>
                   <div className="jumbotron-body">
                     <div className="sliding-wrapper ">
@@ -50,15 +50,14 @@ function Main() {
                             </div>
                           </div>{" "}
                         </div>{" "}
-                        Developer
+                        Developer.
                       </div>{" "}
-                    </div>
-                    <p className="d-inline">
-                      I'm passionate for building awesome web applications! I'm
+                     <p className="d-inline"> I'm passionate for building awesome web applications! I'm
                       an industrial/System Engineer.I successfully completed a
                        Full Stack (MERN) Developer Bootcamp Program in
-                      Epicode (formerly known as Strive School GmBh).
-                    </p>
+                      Epicode (formerly known as Strive School GmBh).</p>
+                    </div>
+              
                   </div>
                 </div>
               </Col>

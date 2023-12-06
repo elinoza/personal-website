@@ -17,7 +17,7 @@ console.log(theme)
         <Container >
          
           <Navbar.Brand className="d-flex" href="#home">
-          <div style={{width:"57.1428571429px", marginRight:"10px"}}><AnimatedEye/></div>
+      
             
           <ThemeToggler/>
 

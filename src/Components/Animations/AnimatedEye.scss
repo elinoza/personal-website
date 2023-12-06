@@ -1,12 +1,24 @@
 @use 'sass:math';
 @import "../partials/Colors.scss";
 $font-size:1.2em;
-$divider:7;
+$divider:6;
+
+
+.animated-eye-wrapper{
+ 
+    display: inline;
+    position:relative;
+
+
+}
 .animated-eye {
 
     position: absolute;
     background: $background-color;
-top:0px;
+    top: -30px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 
     z-index: 5;
     width: (400/$divider)+px;

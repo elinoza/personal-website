@@ -2,32 +2,42 @@
 @import "../../Components/partials/SlidingText.scss";
 @import "../partials/Colors";
 
+
+body {
+    background-color: $background-color;
+}
+
 .dark-wrapper {
-    background-color: whitesmoke;
-    filter: invert(1) hue-rotate(180deg);
-  img:not(.icon-img){
+    background-color: $background-color;
     filter: invert(1) hue-rotate(180deg);
 
-  }
-  .skill-icon{
-    filter: invert(1) hue-rotate(180deg);
-  }
-  .animated-eye .eye{
-  
-    filter: invert(1) hue-rotate(180deg);
+    img:not(.icon-img) {
+        filter: invert(1) hue-rotate(180deg);
 
-  
-  }
-    
+    }
 
-  
-    
-  }
+    .skill-icon {
+        filter: invert(1) hue-rotate(180deg);
+    }
 
-  
+    .animated-eye .eye {
+
+        filter: invert(1) hue-rotate(180deg);
+
+
+    }
+
+
+
+
+}
+
+
 
 .navbar {
-    .container{padding:0px;}
+    .container {
+        padding: 0px;
+    }
 
     &.bg-body-tertiary {
 
@@ -49,10 +59,7 @@
 
 
 
-.first-row {
- 
-
-}
+.first-row {}
 
 
 .my-jumbotron {
@@ -67,8 +74,8 @@
         margin-bottom: 20px
     }
 
-padding-top: 30px;
-padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-top: 20px;
 
     &:not(.icon) {
@@ -77,41 +84,45 @@ padding-bottom: 30px;
 
     line-height: $font-size*1.5;
 
-   
+
 
     .jumbotron-body {
-        display: flex;
-        flex-wrap: wrap;
+       
+        margin-bottom:20px;
     }
 
-   
+
 
     .icon {
         font-size: 1.5em;
-     
+
         color: rgb(0, 0, 0);
         transition: 0.2s ease-in-out;
         cursor: pointer;
-        
+
 
         &:hover {
-          
+
             transform: scale(1.1);
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 color: $red;
             }
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 color: $navy;
             }
-        
+
 
         }
     }
-    .contacts{ 
-        width:100%;
-        display:flex;
+
+    .contacts {
+        
+        width: 100%;
+        display: flex;
         justify-content: space-around;
-        align-items:center;
+        align-items: center;
 
     }
 
@@ -122,7 +133,7 @@ padding-bottom: 30px;
 
 
 .skills-section {
-    background-color:$beige;
+    background-color: $beige;
 }
 
 #skill-set {
@@ -138,12 +149,12 @@ padding-bottom: 30px;
         padding: 10px;
         display: flex;
         align-items: center;
-        margin:10px;
+        margin: 10px;
 
-   
-      
-        &:hover{
-     
+
+
+        &:hover {
+
             animation: hop 0.5s linear;
 
             @keyframes hop {
@@ -151,21 +162,21 @@ padding-bottom: 30px;
 
                     transform: rotate(0deg) scale(1.1)
                 }
-               25%{
+
+                25% {
                     transform: rotate(10deg) scale(1.1)
-
                 }
-                50%{
+
+                50% {
                     transform: rotate(-10deg)scale(1.1)
-
                 }
-                
+
 
                 100% {
 
 
 
-                    transform:  rotate(0deg)scale(1)
+                    transform: rotate(0deg)scale(1)
                 }
             }
         }
@@ -187,7 +198,23 @@ padding-bottom: 30px;
 #projects-row {
     margin-top: 30px;
     padding-top: 30px;
+
     >div {
         padding: 4px
     }
 }
+
+.form-check-input{
+    &:focus{
+        
+        border-color: $yellow!important;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(182, 124, 38, 0.25);
+
+    }
+
+&:checked {
+    background-color: #930946;
+    border-color: #930946}
+}
+
