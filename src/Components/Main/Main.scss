@@ -3,22 +3,31 @@
 @import "../partials/Colors";
 
 .dark-wrapper {
-
     background-color: whitesmoke;
     filter: invert(1) hue-rotate(180deg);
-  img{
-      filter: invert(1) hue-rotate(180deg);
+  img:not(.icon-img){
+    filter: invert(1) hue-rotate(180deg);
+
+  }
+  .skill-icon{
+    filter: invert(1) hue-rotate(180deg);
+  }
+  .animated-eye .eye{
   
-    }
-    .icon-img{
-        filter:none
-    }
+    filter: invert(1) hue-rotate(180deg);
+
+  
+  }
+    
+
+  
     
   }
 
   
 
 .navbar {
+    .container{padding:0px;}
 
     &.bg-body-tertiary {
 
@@ -41,7 +50,7 @@
 
 
 .first-row {
-    min-height: 75vh;
+ 
 
 }
 

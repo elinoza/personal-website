@@ -14,7 +14,7 @@ function NavBar () {
 console.log(theme)
     return (
       <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
+        <Container >
          
           <Navbar.Brand className="d-flex" href="#home">
           <div style={{width:"57.1428571429px", marginRight:"10px"}}><AnimatedEye/></div>

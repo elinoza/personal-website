@@ -1,14 +1,16 @@
+@use 'sass:math';
+@import "../partials/Colors.scss";
 $font-size:1.2em;
 $divider:7;
 .animated-eye {
 
     position: absolute;
-    background: #363847;
+    background: $background-color;
 top:0px;
 
     z-index: 5;
-    width: 400/$divider+px;
-    height: 400/$divider+px;
+    width: (400/$divider)+px;
+    height: (400/$divider)+px;
 
     display: flex;
     justify-content: center;
@@ -18,8 +20,8 @@ top:0px;
 
 
         position: relative;
-        width: 200/$divider+px;
-        height: 200/$divider+px;
+        width: (200/$divider)+px;
+        height: (200/$divider)+px;
         background: #D9D8D8;
         border-radius: 100% 0;
         transform: rotate(45deg);
@@ -31,8 +33,8 @@ top:0px;
     }
 
     .iris {
-        width: 130/$divider+px;
-        height: 130/$divider+px;
+        width: (130/$divider)+px;
+        height: (130/$divider)+px;
         background: radial-gradient(circle, rgba(63, 171, 251, 1) 28%, rgba(55, 193, 222, 1) 54%, rgba(52, 175, 210, 1) 65%);
         border-radius: 50%;
         display: flex;
@@ -44,8 +46,8 @@ top:0px;
 
     .pupil {
 
-        width: 40/$divider+px;
-        height: 40/$divider+px;
+        width:( 40/$divider)+px;
+        height:( 40/$divider)+px;
         background-color: #0d3552;
         border-radius: 50%;
 
@@ -54,21 +56,21 @@ top:0px;
     .eye-lid-top {
 
         position: absolute;
-        top: 40/$divider+px;
-        width: 300/$divider+px;
-        height: 100/$divider+px;
-        background: #363847;
+        top:( 40/$divider)+px;
+        width: (300/$divider)+px;
+        height: (100/$divider)+px;
+        background: $background-color;
         z-index: 1;
         animation: top 5s ease-in-out infinite
     }
 
     .eye-lid-bottom {
         position: absolute;
-        bottom: 40/$divider+px;
-        width: 300/$divider+px;
-        height: 100/$divider+px;
+        bottom:( 40/$divider)+px;
+        width: (300/$divider)+px;
+        height: (100/$divider)+px;
         z-index: 1;
-        background: #363847;
+        background: $background-color;
         animation: bottom 5s ease-in-out infinite
     }
 
@@ -87,7 +89,7 @@ top:0px;
         20%,
         53%,
         84% {
-            transform: translateY(100/$divider+px);
+            transform: translateY((100/$divider)+px);
         }
     }
 
@@ -106,7 +108,7 @@ top:0px;
         20%,
         53%,
         84% {
-            transform: translateY(-20/$divider+px);
+            transform: translateY((-20/$divider)+px);
         }
     }
 
@@ -122,17 +124,17 @@ top:0px;
 
         15%,
         30% {
-            transform: translate(-10/$divider+px, 50/$divider+px);
+            transform: translate((-10/$divider)+px,( 50/$divider)+px);
         }
 
         34%,
         50% {
-            transform: translate(-30/$divider+px, 0px);
+            transform: translate((-30/$divider)+px, 0px);
         }
 
         64%,
         70% {
-            transform: translate(50/$divider+px, -20/$divider+px);
+            transform: translate((50/$divider)+px, (-20/$divider)+px);
         }
     }
 

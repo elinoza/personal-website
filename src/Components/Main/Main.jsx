@@ -17,14 +17,14 @@ function Main() {
   console.log(Details.length, Logos);
 
   return (
-    <>
-      <Container
-        className={`${
-          theme === Themes.dark ? "dark-wrapper" : "light-wrapper"
-        }`}
+    <div   className={`${
+      theme === Themes.dark ? "dark-wrapper" : "light-wrapper"
+    }`}>
+      <Container 
+      
       >
         <NavBar />
-        <Row id="about-section" className="first-row ">
+        <Row id="about-section" className="first-row  ">
           <Col xs={12}>
             <Row className="my-jumbotron" >
               <Col xs={12} md={9} >
@@ -56,7 +56,7 @@ function Main() {
                     <p className="d-inline">
                       I'm passionate for building awesome web applications! I'm
                       an industrial/System Engineer.I successfully completed a
-                      6-months Full Stack (MERN) Developer Bootcamp Program in
+                       Full Stack (MERN) Developer Bootcamp Program in
                       Epicode (formerly known as Strive School GmBh).
                     </p>
                   </div>
@@ -120,7 +120,7 @@ function Main() {
         </Row>
         <div>Footer</div>
       </Container>
-    </>
+    </div>
   );
 }
 
