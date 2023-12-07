@@ -53,18 +53,24 @@ class Main extends Component {
               <div className="information">
               <div className="links">
                 
-                <div className="website-image">
-                <Badge  bg="warning">Live</Badge>
+                <div className="website-image" onClick={()=> window.open(detail.WebUrl)}>
+              
+                
+                   
+                
+                <Badge  bg="warning">Web</Badge>
+                
            
                   <img   src={detail.LogoUrl} />
+               
                 </div>
              
-                <div className="fe-link">
+                <div className="fe-link" onClick={()=> window.open(detail.Fe)}>
                 <Badge bg="warning">Fe</Badge>
               
                   <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
                 </div>
-                <div className="be-link">
+                <div className="be-link" onClick={()=> window.open(detail.Be)}>
                 <Badge bg="warning">Be</Badge>
                   <img  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" />
                 </div>

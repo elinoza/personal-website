@@ -27,14 +27,14 @@ function Main() {
         <Row id="about-section" className="first-row  ">
           <Col xs={12}>
             <Row className="my-jumbotron" >
-              <Col xs={12} md={9} >
+              <Col xs={12} md={8} >
                 {" "}
                 <div >
-                  <div className="">
+                  <div className="mb-4 ">
                     {" "}
-                    <h1 className="d-inline">Hi! I'm Hilal </h1>{" "}<AnimatedEye/>
+                    <h1 className="d-inline ">Hi! I'm Hilal </h1>{" "}<AnimatedEye/>
                   </div>
-                  <div className="jumbotron-body">
+                  <div className="jumbotron-body mb-5">
                     <div className="sliding-wrapper ">
                       {" "}
                       <div className="pre d-inline">
@@ -52,7 +52,7 @@ function Main() {
                         </div>{" "}
                         Developer.
                       </div>{" "}
-                     <p className="d-inline"> I'm passionate for building awesome web applications! I'm
+                     <p className="d-inline"> I'm passionate for building awesome web applications! </p><p> I'm
                       an industrial/System Engineer.I successfully completed a
                        Full Stack (MERN) Developer Bootcamp Program in
                       Epicode (formerly known as Strive School GmBh).</p>
@@ -61,7 +61,7 @@ function Main() {
                   </div>
                 </div>
               </Col>
-              <Col  className="d-flex justify-content-center" xs={12} md={3}>
+              <Col  className="d-flex justify-content-center " xs={12} md={4}>
                 <div className=" contacts ">
                 <a
                     className="icon"
@@ -98,7 +98,7 @@ function Main() {
               </Col>
             </Row>
           </Col>
-          <Col xs={12} className="skills-section my-jumbotron">
+          <Col xs={12} className="skills-section my-jumbotron mt-5 ">
             <h1> SKILLS</h1>
 
             <div id="skill-set">
@@ -117,7 +117,7 @@ function Main() {
             <Projects key={index} detail={detail} />
           ))}
         </Row>
-        <div>Footer</div>
+      
       </Container>
     </div>
   );

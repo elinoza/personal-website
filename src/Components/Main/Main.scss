@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 @import "../Animations/AnimatedEye";
 @import "../../Components/partials/SlidingText.scss";
 @import "../partials/Colors";
@@ -5,6 +6,8 @@
 
 body {
     background-color: $background-color;
+    font-family: 'Comfortaa', sans-serif;
+
 }
 
 .dark-wrapper {
@@ -59,7 +62,6 @@ body {
 
 
 
-.first-row {}
 
 
 .my-jumbotron {
@@ -86,15 +88,12 @@ body {
 
 
 
-    .jumbotron-body {
-       
-        margin-bottom:20px;
-    }
+ 
 
 
 
     .icon {
-        font-size: 1.5em;
+        font-size: 40px;
 
         color: rgb(0, 0, 0);
         transition: 0.2s ease-in-out;
@@ -118,7 +117,7 @@ body {
     }
 
     .contacts {
-        
+
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -204,17 +203,17 @@ body {
     }
 }
 
-.form-check-input{
-    &:focus{
-        
-        border-color: $yellow!important;
+.form-check-input {
+    &:focus {
+
+        border-color: $yellow !important;
         outline: 0;
         box-shadow: 0 0 0 0.25rem rgba(182, 124, 38, 0.25);
 
     }
 
-&:checked {
-    background-color: #930946;
-    border-color: #930946}
+    &:checked {
+        background-color: #930946;
+        border-color: #930946
+    }
 }
-
