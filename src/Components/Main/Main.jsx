@@ -38,7 +38,7 @@ function Main() {
                     <div className="sliding-wrapper ">
                       {" "}
                       <div className="pre d-inline">
-                        I'm a{" "}
+                        "I'm a{" "}
                         <div className="primary-sliding-wrapper">
                           {" "}
                           full-stack{" "}
@@ -52,10 +52,10 @@ function Main() {
                         </div>{" "}
                         Developer.
                       </div>{" "}
-                     <p className="d-inline"> I'm passionate for building awesome web applications! </p><p> I'm
+                     <p className="d-inline">  I'm passionate for building awesome web applications! </p><p> I'm
                       an industrial/System Engineer.I successfully completed a
                        Full Stack (MERN) Developer Bootcamp Program in
-                      Epicode (formerly known as Strive School GmBh).</p>
+                      Epicode (formerly known as Strive School GmBh)."</p>
                     </div>
               
                   </div>
@@ -111,7 +111,7 @@ function Main() {
           </Col>
         </Row>
        
-        <Row id="projects-row">
+        <Row className="mb-5" id="projects-row">
         <h1>My Projects</h1>
           {Details.map((detail, index) => (
             <Projects key={index} detail={detail} />

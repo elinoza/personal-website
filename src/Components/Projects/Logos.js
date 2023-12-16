@@ -10,11 +10,12 @@ export const find_logo=(logo)=>{
    [  "ExpressJS","https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" ],
    [  "PostgreSQL","https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" ],
     [ "MongoDB","https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" ],
-     ["Heroku","https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" ]]
+     ["Heroku","https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" ],
+    ["Redux","https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"]]
  
   let Ind=logos.findIndex((elem)=>elem.find((item)=> logo=== item))
 
-return Ind=== -1  ? " " + logo + " " : <img
+return Ind=== -1  ? ` "${logo}"  `: <img
 className="d-inline"
   src={logos[Ind][1]}
   alt="img"
