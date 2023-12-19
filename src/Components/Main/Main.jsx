@@ -3,9 +3,10 @@ import "./Main.scss";
 import AnimatedEye from "../Animations/AnimatedEye";
 import Details from "../../Utils/Details.json";
 import Logos from "../../Utils/Logos.json";
-import { FaLinkedin,FaGithub } from "react-icons/fa";
+import { FaLinkedin,FaGithub,FaAngleDoubleDown } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
+import { CgScrollV } from "react-icons/cg";
 import { Col, Row, Container, Button, Badge } from "react-bootstrap";
 import Projects from "../Projects/Projects";
 import NavBar from "../Navbar/NavBar";
@@ -26,8 +27,9 @@ function Main() {
         <NavBar />
         <Row id="about-section" className="first-row  mt-5">
           <Col xs={12}>
-            <Row className="my-jumbotron" >
-              <Col xs={12} md={8} >
+            <div className="my-jumbotron" >
+           <div className="scroll-icon d-sm-none d-lg-block "><FaAngleDoubleDown    className="d-inline" /> Scroll down to continue</div> 
+              <div >
                 {" "}
                 <div >
                   <div className="mb-4 ">
@@ -60,8 +62,8 @@ function Main() {
               
                   </div>
                 </div>
-              </Col>
-              <Col  className="d-flex justify-content-center " xs={12} md={4}>
+              </div>
+              <div  className="d-flex justify-content-center " >
                 <div className=" contacts ">
                 <a
                     className="icon"
@@ -95,8 +97,8 @@ function Main() {
                     <FaMedium />{" "}
                   </a>
                 </div>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Col>
           <Col xs={12} className="skills-section my-jumbotron mt-3 ">
             <h1> My Skills</h1>
@@ -111,7 +113,7 @@ function Main() {
           </Col>
         </Row>
        
-        <Row className="mb-5" id="projects-row">
+        <Row className="pb-5" id="projects-row">
         <h1>My Projects</h1>
           {Details.map((detail, index) => (
             <Projects key={index} detail={detail} />

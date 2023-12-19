@@ -1,6 +1,6 @@
 
 $font-size:1.2em;
-$line-height:$font-size*2;
+$line-height:$font-size*1.5;
 @import "../Animations/AnimatedEye";
 @import "../../Components/partials/SlidingText.scss";
 @import "../partials/Colors";
@@ -8,7 +8,14 @@ $line-height:$font-size*2;
 
 
 body {
+    overflow-x: hidden;
+ 
     background-color: $background-color;
+    background: rgb(233,223,206);
+    background: radial-gradient(circle, rgba(233,223,206,1) 0%, rgba(255,255,255,0.6561743341404358) 75%);
+    // background: rgb(233,223,206);
+    // background: radial-gradient(circle, rgba(233,223,206,1) 0%, rgba(30,83,117,0.6561743341404358) 75%, rgba(237,172,196,1) 100%);
+
     font-family: 'Montserrat', sans-serif;
     h1,
     h2,
@@ -78,6 +85,9 @@ body {
 
 
 .my-jumbotron {
+    font-size:2em;
+  
+
 
     h1,
     h2,
@@ -93,11 +103,34 @@ body {
 
     padding-bottom: 30px;
 
+    .scroll-icon{
+       
+        position:absolute;
+  bottom:20%;
+ left:75%;
+    font-size:0.3em;
+   
 
-    &:not(.icon) {
-        font-size: $font-size;
+     svg{
+        font-size:3em;
+        animation: light 2s linear alternate infinite;
+        @keyframes light{
+            0%{color:gray}
+          
+            100%{color: rgb(203, 159, 159)}
+        }
+        
+     }
     }
 
+    &:not(.icon) {
+        // font-size: $font-size;
+    }
+
+    &:not(.skills-section){
+        position:relative;
+      height: 100vh;
+    }
     line-height:  $line-height;
 
 
@@ -145,9 +178,7 @@ body {
 
 
 
-.skills-section {
 
-}
 
 #skill-set {
     display: flex;
