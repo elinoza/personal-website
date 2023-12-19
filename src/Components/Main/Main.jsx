@@ -24,7 +24,7 @@ function Main() {
       
       >
         <NavBar />
-        <Row id="about-section" className="first-row  ">
+        <Row id="about-section" className="first-row  mt-5">
           <Col xs={12}>
             <Row className="my-jumbotron" >
               <Col xs={12} md={8} >
@@ -98,8 +98,8 @@ function Main() {
               </Col>
             </Row>
           </Col>
-          <Col xs={12} className="skills-section my-jumbotron mt-5 ">
-            <h1> SKILLS</h1>
+          <Col xs={12} className="skills-section my-jumbotron mt-3 ">
+            <h1> My Skills</h1>
 
             <div id="skill-set">
               {Logos.map((elem) => (

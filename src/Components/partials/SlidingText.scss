@@ -2,13 +2,15 @@
     position: relative;
     // height: $font-size*1.5;
     width: fit-content;
+   
+    
 
 
     .primary-sliding-wrapper {
         position: relative;
         display: inline;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
         color: white;
     }
 
@@ -17,11 +19,11 @@
         overflow: hidden;
         padding-left: 3px;
         padding-right: 3px;
-        height: $font-size *1.5;
+        height:  $line-height;
         z-index: 4;
         width: max-content;
 
-        top: -6px;
+        top: -11px;
         bottom: 0px;
         right: 0px;
         left: 0px;
@@ -29,8 +31,8 @@
 
         .sliding-parent {
 
-
-            color: black;
+font-weight:bolder;
+            color: $orange;
             animation: slide 6s ease-in-out infinite alternate-reverse; 
 
             @keyframes slide {
@@ -42,14 +44,14 @@
 
                 35%,
                 65% {
-                    transform: translateY($font-size * -1.5);
+                    transform: translateY( $line-height * -1);
                 }
 
                 ;
 
                 70%,
                 100% {
-                    transform: translateY($font-size * -3)
+                    transform: translateY( $line-height * -2)
                 }
 
                 ;

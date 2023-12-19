@@ -1,12 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+$font-size:1.2em;
+$line-height:$font-size*2;
 @import "../Animations/AnimatedEye";
 @import "../../Components/partials/SlidingText.scss";
 @import "../partials/Colors";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;800&family=Reem+Kufi:wght@400;500;600&display=swap');
 
 
 body {
     background-color: $background-color;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+        margin-bottom: 20px
+    }
+
 
 }
 
@@ -77,15 +90,15 @@ body {
     }
    
 
-    padding-top: 30px;
+
     padding-bottom: 30px;
-    margin-top: 20px;
+
 
     &:not(.icon) {
         font-size: $font-size;
     }
 
-    line-height: $font-size*1.5;
+    line-height:  $line-height;
 
 
 
@@ -133,7 +146,7 @@ body {
 
 
 .skills-section {
-    background-color: $beige;
+
 }
 
 #skill-set {
@@ -146,6 +159,7 @@ body {
         height: 60px;
         border-radius: 50%;
         background-color: white;
+        box-shadow: 0px 0px 14px 0 rgba(0, 0, 0, 0.5);
         padding: 10px;
         display: flex;
         align-items: center;
