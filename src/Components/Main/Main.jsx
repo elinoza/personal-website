@@ -28,7 +28,7 @@ function Main() {
         <Row id="about-section" className="first-row  mt-5">
           <Col xs={12}>
             <div className="my-jumbotron" >
-           <div className="scroll-icon d-sm-none d-lg-block "><FaAngleDoubleDown    className="d-inline" /> Scroll down to continue</div> 
+           <div className="scroll-icon d-lg-block "><FaAngleDoubleDown    className="d-inline" /> Scroll down to continue</div> 
               <div >
                 {" "}
                 <div >
