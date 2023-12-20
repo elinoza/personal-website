@@ -111,7 +111,7 @@ function Main() {
           </Col>
         </Row>
        
-        <Row className="mb-5" id="projects-row">
+        <Row className="pb-5" id="projects-row">
         <h1>My Projects</h1>
           {Details.map((detail, index) => (
             <Projects key={index} detail={detail} />
