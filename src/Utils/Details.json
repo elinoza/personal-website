@@ -5,7 +5,7 @@
     "LogoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/LinkedIn_Learning_logo.png",
     "Description": "I graduated with my solo capstone project, a LinkedIn Learning website clone for watching training videos, skill acquisition, and progress tracking. Project was built in 1 month.",
     "Tools": ["ReactJS", "NodeJS", "MongoDB", "ExpressJS", "Bootstrap", "Redux", "videoJS" ],
-    "WebUrl":"https://www.e-learning-platform-fe.vercel.app/",
+    "WebUrl":"https://e-learning-platform-fe-git-main-elinoza.vercel.app/",
     "Fe":"https://github.com/elinoza/e-learning-platform-fe",
     "Be":"https://github.com/elinoza/e-learning-platform-be"
   },
