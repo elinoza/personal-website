@@ -34,7 +34,7 @@ console.log(theme)
             <Nav className="me-auto">
               <Nav.Link href="#about-section">About</Nav.Link>
               <Nav.Link href="#projects-section">Projects</Nav.Link>
-              <Nav.Link className="download_cv" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/106w_dsuhKX6JiCyJ2Po0FwkdMPgf6k_L/view?usp=sharing">
+              <Nav.Link className="download_cv" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1-BRsTe_YyAb012XkEq5Fof0UY1e8a3FO/view?usp=sharing">
               CV
               </Nav.Link>
             </Nav>
